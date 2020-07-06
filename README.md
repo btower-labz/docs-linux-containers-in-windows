@@ -26,6 +26,8 @@ Virtualization software in scope:
 - HyperV
 - QEMU
 
+vmWare, VirtualBox usage should be also possible.
+
 ## Nested virtualization
 
 Nested virtualization support is required to use HyperV container isolation.
@@ -33,6 +35,8 @@ Nested virtualization support is required to use HyperV container isolation.
 In case nested virtualization is not available, it's possible to use QEMU with full software virtualization.
 
 Nested virtualization has less performance impact. With pure software virtualization the performance hit is significant.
+
+See: [nested-virtualization-links.md](nested-virtualization-links.md)
 
 ## Windows specifics
 
@@ -44,6 +48,8 @@ Both are **EXPERIMENTAL**. Both requires nested virtualization support.
 
 ## Virtualization configuration
 
-Option 1: Windows Server 2019 LTS + LOW + HyperV isolation
+Option 1: [Windows Server 2019 LTS + LCOW + HyperV isolation](windows-2019-lcow-hyperv.md)
 
 Option 2: Windows Server 2016 LTS + QEMU + Fedora CoreOS
+
+Option 3: Windows Server 2004 SAC + WSL2 + Docker Desktop
