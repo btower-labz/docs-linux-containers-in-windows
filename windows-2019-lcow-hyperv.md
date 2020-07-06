@@ -1,4 +1,4 @@
-# Linux Containers in Windows
+# [Linux Containers in Windows](README.md)
 
 ## Windows Server 2019 LTS + LOW + HyperV isolation
 
@@ -7,6 +7,10 @@ Nested virtualization support is required to get this solution work.
 See options here: [nested-virtualization-links.md](nested-virtualization-links.md)
 
 ### Architecture
+
+- Hyper-V is used to run LinuxKit
+- All the linux containers are executed inside LinuxKit VM
+- Windows containers can be run in both process and hyperv isolation modes
 
 ### Windows version selection
 
@@ -86,7 +90,7 @@ rm release.zip
 Test linux containers ...
 
 ```powershell
-docker run --interactive --tty ubuntu id
+docker run --interactive --tty ubuntu uname -a
 ```
 
 Test linux container port exports
@@ -100,18 +104,13 @@ docker container kill webserver
 Test windows containers ...
 
 ```powershell
-docker run --platform=windows --interactive --isolation=process --tty mcr.microsoft.com/powershell:lts-nanoserver-1809 pwsh.exe
-```
-
-```powershell
-(Get-ItemProperty -Path c:\windows\system32\hal.dll).VersionInfo.FileVersion
-exit
+docker run --platform=windows --interactive --isolation=process --tty mcr.microsoft.com/powershell:lts-nanoserver-1809 pwsh.exe -Command {hostname}
 ```
 
 Test windows container port exports ...
 
 ```powershell
-docker run -d -p 8080:80 --isolation=hyperv --name iisweb mcr.microsoft.com/windows/servercore/iisdocker
+docker run -d -p 8080:80 --isolation=hyperv --name iisweb mcr.microsoft.com/windows/servercore/iis
 curl http://127.0.0.1:8080
 docker container kill iisweb
 ```
@@ -131,6 +130,8 @@ Clone sample app repository ...
 docker run -ti --rm -v ${HOME}:/root -v "$((Resolve-Path .\).Path):/git" alpine/git clone https://github.com/btower-labz/docker-compose-sample-app.git
 ```
 
+Execute and test sample app ...
+
 ```powershell
 cd docker-compose-sample-app
 docker-compose -f app.yml up -d
@@ -144,14 +145,14 @@ docker-compose -f app.yml kill
 
 See: [DockerCon: Linux Containers on Windows - The Inside Story](https://www.youtube.com/watch?v=JZtQnYaO874)
 
-See: https://github.com/linuxkit/lcow
+See: [https://github.com/linuxkit/lcow](https://github.com/linuxkit/lcow)
 
-See: https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/linux-containers
+See: [https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/linux-containers](https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/linux-containers)
 
-See: https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/hyperv-container
+See: [https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/hyperv-container](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/hyperv-container)
 
-See: https://success.docker.com/article/how-to-enable-linux-containers-on-windows-server-2019
+See: [https://success.docker.com/article/how-to-enable-linux-containers-on-windows-server-2019](https://success.docker.com/article/how-to-enable-linux-containers-on-windows-server-2019)
 
-See: https://docs.docker.com/compose/gettingstarted/
+See: [https://docs.docker.com/compose/gettingstarted](https://docs.docker.com/compose/gettingstarted)
 
-See: https://stefanscherer.github.io/sneak-peek-at-lcow/
+See: [https://stefanscherer.github.io/sneak-peek-at-lcow](https://stefanscherer.github.io/sneak-peek-at-lcow)

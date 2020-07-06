@@ -26,7 +26,7 @@ Virtualization software in scope:
 - HyperV
 - QEMU
 
-vmWare, VirtualBox usage should be also possible.
+It should be possible to use vmWare, VirtualBox as well.
 
 ## Nested virtualization
 
