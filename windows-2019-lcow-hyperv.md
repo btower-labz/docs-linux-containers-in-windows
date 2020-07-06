@@ -4,6 +4,7 @@
 
 ### Architecture
 
+
 ### windows version selection
 
 LCOW feature is supported from Windows Server 1709 till 2004.
@@ -186,5 +187,7 @@ curl http://127.0.0.1:5000
 docker-compose -f app.yml kill
 ```
 
+<details>
+<summary>Application code</summary>
 <script src="https://gist.github.com/btower-labz/f4da5b5d66b5d81e6a097d2eaa72f59d.js?file=app.py" />
-
+</details>
