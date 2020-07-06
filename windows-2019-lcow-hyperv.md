@@ -38,7 +38,7 @@ Install-WindowsFeature -Name Hyper-V -IncludeAllSubFeature -IncludeManagementToo
 Restart-Computer -Force
 ```
 
-Enable windows Container components ...
+Enable Windows Container components. It might be already enabled and then restart is not required.
 
 ```powershell
 Install-WindowsFeature Containers
