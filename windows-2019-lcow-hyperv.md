@@ -31,6 +31,8 @@ LCOW feature is supported from Windows Server 1709 till 2004.
 
 Windows Server 2019 (version 1809) Standart\Datacenter is the best choice due to LTS and stability.
 
+See [Windows Server release information](https://docs.microsoft.com/en-us/windows-server/get-started/windows-server-release-info)
+
 ### Server configuration
 
 Enable Hyper-V components ...
@@ -145,16 +147,16 @@ docker-compose -f app.yml kill
 
 ### References
 
-See: [DockerCon: Linux Containers on Windows - The Inside Story](https://www.youtube.com/watch?v=JZtQnYaO874)
+[DockerCon: Linux Containers on Windows - The Inside Story](https://www.youtube.com/watch?v=JZtQnYaO874)
 
-See: [https://github.com/linuxkit/lcow](https://github.com/linuxkit/lcow)
+[LunuxKit LCOW Sources](https://github.com/linuxkit/lcow)
 
-See: [https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/linux-containers](https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/linux-containers)
+[https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/linux-containers](https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/linux-containers)
 
-See: [https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/hyperv-container](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/hyperv-container)
+[https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/hyperv-container](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/hyperv-container)
 
-See: [https://success.docker.com/article/how-to-enable-linux-containers-on-windows-server-2019](https://success.docker.com/article/how-to-enable-linux-containers-on-windows-server-2019)
+[https://success.docker.com/article/how-to-enable-linux-containers-on-windows-server-2019](https://success.docker.com/article/how-to-enable-linux-containers-on-windows-server-2019)
 
-See: [https://docs.docker.com/compose/gettingstarted](https://docs.docker.com/compose/gettingstarted)
+[https://docs.docker.com/compose/gettingstarted](https://docs.docker.com/compose/gettingstarted)
 
-See: [https://stefanscherer.github.io/sneak-peek-at-lcow](https://stefanscherer.github.io/sneak-peek-at-lcow)
+[https://stefanscherer.github.io/sneak-peek-at-lcow](https://stefanscherer.github.io/sneak-peek-at-lcow)
