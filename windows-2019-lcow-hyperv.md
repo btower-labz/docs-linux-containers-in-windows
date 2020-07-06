@@ -4,8 +4,6 @@
 
 ### Architecture
 
-![Architecture](https://app.lucidchart.com/publicSegments/view/ec62639e-1355-45b3-9674-3676d3b00891/image.png)
-
 ### Windows version selection
 
 LCOW feature is supported from Windows Server 1709 till 2004.
