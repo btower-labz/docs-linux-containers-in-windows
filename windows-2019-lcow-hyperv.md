@@ -31,11 +31,6 @@ Restart-Computer -Force
 
 ```powershell
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force -Confirm:$False
-Install-Module PowerShellGet -RequiredVersion 2.2.4 -Force -Confirm:$False
-Restart-Computer -Force
-```
-
-```powershell
 Install-Module -Name DockerMsftProvider -Repository PSGallery -Force -Scope AllUsers -Confirm:$False
 Install-Package -Name docker -ProviderName DockerMsftProvider -Confirm:$False -Force
 Restart-Computer -Force
