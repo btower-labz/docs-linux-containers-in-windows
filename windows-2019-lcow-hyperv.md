@@ -12,6 +12,8 @@ See options here: [nested-virtualization-links.md](nested-virtualization-links.m
 - All the linux containers are executed inside LinuxKit VM
 - Windows containers can be run in both process and hyperv isolation modes
 
+![Layout](https://app.lucidchart.com/publicSegments/view/8c00e4e0-0dc4-4447-871a-be47c3c5a760/image.png)
+
 ### Windows version selection
 
 LCOW feature is supported from Windows Server 1709 till 2004.
