@@ -36,7 +36,7 @@ In case nested virtualization is not available, it's possible to use QEMU with f
 
 Nested virtualization has less performance impact. With pure software virtualization the performance hit is significant.
 
-See: [nested-virtualization-links.md](nested-virtualization-links.md)
+See [nested virtualization suppor options](nested-virtualization-links.md) by provider.
 
 ## Windows specifics
 
@@ -50,6 +50,8 @@ Both are **EXPERIMENTAL**. Both requires nested virtualization support.
 
 Option 1: [Windows Server 2019 LTS + LCOW + HyperV isolation](windows-2019-lcow-hyperv.md)
 
-Option 2: Windows Server 2016 LTS + QEMU + Fedora CoreOS(windows-2016-coreos-qemu.md)
+Option 2: [Windows Server 2016 LTS + CoreOS + QEMU](windows-2016-coreos-qemu.md)
 
-Option 3: [Windows Server 2004 SAC + WSL2 + Docker Desktop](windows-2019-lcow-hyperv.md)
+Option 3: [Windows Server 2004 SAC + WSL2 + Docker Desktop](windows-2004-wsl2-hyperv.md)
+
+Option 4: [Windows Server 2016 LTS + CoreOS + HyperV](windows-2016-coreos-hyperv.md)
