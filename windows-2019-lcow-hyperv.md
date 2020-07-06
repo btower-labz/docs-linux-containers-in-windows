@@ -1,6 +1,6 @@
 # [Linux Containers in Windows](README.md)
 
-## Windows Server 2019 LTS + LOW + HyperV isolation
+## Windows Server 2019 LTS + LCOW + HyperV isolation
 
 Nested virtualization support is required to get this solution work.
 
@@ -160,3 +160,6 @@ docker-compose -f app.yml kill
 [https://docs.docker.com/compose/gettingstarted](https://docs.docker.com/compose/gettingstarted)
 
 [https://stefanscherer.github.io/sneak-peek-at-lcow](https://stefanscherer.github.io/sneak-peek-at-lcow)
+
+[https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=Windows-Server](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=Windows-Server)
+

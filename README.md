@@ -50,6 +50,6 @@ Both are **EXPERIMENTAL**. Both requires nested virtualization support.
 
 Option 1: [Windows Server 2019 LTS + LCOW + HyperV isolation](windows-2019-lcow-hyperv.md)
 
-Option 2: Windows Server 2016 LTS + QEMU + Fedora CoreOS
+Option 2: Windows Server 2016 LTS + QEMU + Fedora CoreOS(windows-2016-coreos-qemu.md)
 
-Option 3: Windows Server 2004 SAC + WSL2 + Docker Desktop
+Option 3: [Windows Server 2004 SAC + WSL2 + Docker Desktop](windows-2019-lcow-hyperv.md)
