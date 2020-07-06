@@ -2,37 +2,39 @@
 
 ## General
 
-Nested Hyper-V: [https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization]
+Nested Hyper-V:
+[https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization]
+(https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)
 
 ## AWS
 
-Hyper-V on bare metal: [https://aws.amazon.com/blogs/compute/running-hyper-v-on-amazon-ec2-bare-metal-instances/]
+Hyper-V on bare metal: https://aws.amazon.com/blogs/compute/running-hyper-v-on-amazon-ec2-bare-metal-instances/
 
-Hyper-V on bare metal: [https://www.youtube.com/watch?v=pQPLRImgq9U]
+Hyper-V on bare metal: https://www.youtube.com/watch?v=pQPLRImgq9U
 
-Hyper-V on bare metal: [https://forums.aws.amazon.com/thread.jspa?messageID=926556]
+Hyper-V on bare metal: https://forums.aws.amazon.com/thread.jspa?messageID=926556
 
-AWS bare metal instances: [https://aws.amazon.com/about-aws/whats-new/2019/02/introducing-five-new-amazon-ec2-bare-metal-instances/]
+AWS bare metal instances: https://aws.amazon.com/about-aws/whats-new/2019/02/introducing-five-new-amazon-ec2-bare-metal-instances/
 
 Restrictions:
 - Only bare metal
 
 ## Azure
 
-Enable: [https://docs.microsoft.com/en-us/azure/virtual-machines/windows/nested-virtualization]
+Enable: https://docs.microsoft.com/en-us/azure/virtual-machines/windows/nested-virtualization
 
-Announce: [https://azure.microsoft.com/de-de/blog/nested-virtualization-in-azure/]
+Announce: https://azure.microsoft.com/de-de/blog/nested-virtualization-in-azure/
 
-Use case: [https://www.nakivo.com/blog/hyper-v-nested-virtualization-on-azure-complete-guide/]
+Use case: https://www.nakivo.com/blog/hyper-v-nested-virtualization-on-azure-complete-guide/
 
-Supported types: [https://www.markou.me/2020/05/which-azure-vm-sizes-support-nested-virtualization/]
+Supported types: https://www.markou.me/2020/05/which-azure-vm-sizes-support-nested-virtualization/
 
 Restrictions:
 - Dv3 and Ev3 only
 
 ## GCP
 
-Enable: [https://cloud.google.com/compute/docs/instances/enable-nested-virtualization-vm-instances]
+Enable: https://cloud.google.com/compute/docs/instances/enable-nested-virtualization-vm-instances
 
 Restrictions:
 
@@ -43,14 +45,14 @@ Restrictions:
 
 ## VMWare
 
-ESXi: [https://www.vembu.com/blog/nested-hyper-v-vms-on-a-vmware-esxi-server/]
+ESXi: https://www.vembu.com/blog/nested-hyper-v-vms-on-a-vmware-esxi-server/
 
-ESXi: [https://www.vmwareblog.org/nested-virtualization-vmware-esxi-vs-microsoft-hyper-v/]
+ESXi: https://www.vmwareblog.org/nested-virtualization-vmware-esxi-vs-microsoft-hyper-v/
 
-Case: [https://www.virtualizationhowto.com/2018/07/vmware-vs-hyper-v-nested-virtualization/]
+Case: https://www.virtualizationhowto.com/2018/07/vmware-vs-hyper-v-nested-virtualization/
 
-Compatibility notes: [https://help.skytap.com/enabling-nested-virtualization.html]
+Compatibility notes: [https://help.skytap.com/enabling-nested-virtualization.html
 
 ## Other/Notice
 
-AWS bare metal vs KVM: [https://www.twosixlabs.com/running-thousands-of-kvm-guests-on-amazons-new-i3-metal-instances/]
+AWS bare metal vs KVM: https://www.twosixlabs.com/running-thousands-of-kvm-guests-on-amazons-new-i3-metal-instances/
