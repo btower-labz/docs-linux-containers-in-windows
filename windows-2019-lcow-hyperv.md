@@ -142,6 +142,8 @@ docker-compose -f app.yml kill
 
 ### References
 
+See: [DockerCon: Linux Containers on Windows - The Inside Story](https://www.youtube.com/watch?v=JZtQnYaO874)
+
 See: https://github.com/linuxkit/lcow
 
 See: https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/linux-containers
@@ -152,3 +154,4 @@ See: https://success.docker.com/article/how-to-enable-linux-containers-on-window
 
 See: https://docs.docker.com/compose/gettingstarted/
 
+See: https://stefanscherer.github.io/sneak-peek-at-lcow/
