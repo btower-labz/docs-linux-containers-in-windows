@@ -186,5 +186,5 @@ curl http://127.0.0.1:5000
 docker-compose -f app.yml kill
 ```
 
-<script src="https://gist.github.com/benstr/8744304.js"></script>
+<script src="https://gist.github.com/btower-labz/f4da5b5d66b5d81e6a097d2eaa72f59d.js?file=app.py" />
 
