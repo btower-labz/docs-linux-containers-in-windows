@@ -1,37 +1,49 @@
-## Welcome to GitHub Pages
+# Linux Containers in Windows
 
-You can use the [editor on GitHub](https://github.com/btower-labz/docs-linux-containers-in-windows/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Overview
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The goal of this investigation is to find out a way to run Linux containers inside the Windows host.
 
-### Markdown
+Context: 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Servers provisioned on-permise. No split or additional provisioning possible in meantime.
+- No cloud landing zones available.
+- The workload is Windows with some Linux containers.
+- Docker compose is required
 
-```markdown
-Syntax highlighted code block
+Beter options:
 
-# Header 1
-## Header 2
-### Header 3
+- It's much better to use compute resources to run Linux containers.
+- It's even better to use container orchestration.
+- It's much better to use cloud resources due to compute elasticity.
 
-- Bulleted
-- List
+## Available run options
 
-1. Numbered
-2. List
+The only **reliable** (huh?) way to run Linux workload on Windows hosts is to use virtualization and publish docker api to the host.
 
-**Bold** and _Italic_ and `Code` text
+Virtualization software in scope:
 
-[Link](url) and ![Image](src)
-```
+- HyperV
+- QEMU
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Nested virtualization
 
-### Jekyll Themes
+Nested virtualization support is required to use HyperV container isolation.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/btower-labz/docs-linux-containers-in-windows/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+In case nested virtualization is not available, it's possible to use QEMU with full software virtualization.
 
-### Support or Contact
+Nested virtualization has less performance impact. With pure software virtualization the performance hit is significant.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Windows specifics
+
+Windows support Linux containers with LCOW using HyperV virtualization since Windows Server 1703. This functionality is more or less mature but it's not going to be developed anymore.
+
+Windows support Linux containers with WSL2 using HyperV virtualization since windows Server 2040. This functionality is very new and not tested much.
+
+Both are **EXPERIMENTAL**. Both requires nested virtualization support.
+
+## Virtualization configuration
+
+Option 1: Windows Server 2019 LTS + LOW + HyperV isolation
+
+Option 2: Windows Server 2016 LTS + QEMU + Fedora CoreOS
