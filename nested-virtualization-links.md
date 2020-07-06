@@ -2,9 +2,7 @@
 
 ## General
 
-Nested Hyper-V:
-[https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization]
-(https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)
+Nested Hyper-V: [https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)
 
 ## AWS
 
