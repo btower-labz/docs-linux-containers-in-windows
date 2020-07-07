@@ -163,3 +163,28 @@ docker-compose -f app.yml kill
 
 [https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=Windows-Server](https://docs.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=Windows-Server)
 
+### Docker Version
+
+
+```plain
+PS C:\Users\FtWCdd3aAa> docker version
+Client: Docker Engine - Enterprise
+ Version:           19.03.5
+ API version:       1.40
+ Go version:        go1.12.12
+ Git commit:        2ee0c57608
+ Built:             11/13/2019 08:00:16
+ OS/Arch:           windows/amd64
+ Experimental:      false
+
+Server: Docker Engine - Enterprise
+ Engine:
+  Version:          19.03.5
+  API version:      1.40 (minimum version 1.24)
+  Go version:       go1.12.12
+  Git commit:       2ee0c57608
+  Built:            11/13/2019 07:58:51
+  OS/Arch:          windows/amd64
+  Experimental:     true
+```
+
